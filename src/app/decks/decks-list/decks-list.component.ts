@@ -9,13 +9,12 @@ const element_data: any  = [
 ];
 
 @Component({
-  selector: 'app-decks-list',
-  standalone: true,
-  imports: [
-     MatTableModule,
-  ],
-  templateUrl: './decks-list.component.html',
-  styleUrl: './decks-list.component.scss'
+    selector: 'app-decks-list',
+    imports: [
+        MatTableModule,
+    ],
+    templateUrl: './decks-list.component.html',
+    styleUrl: './decks-list.component.scss'
 })
 export class DecksListComponent {
   public displayedColumns: string[] = ['name', 'cards'];

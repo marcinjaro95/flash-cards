@@ -7,9 +7,9 @@ import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatListItem, RouterLink],
   templateUrl: './header.component.html',
+  standalone: true,
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {

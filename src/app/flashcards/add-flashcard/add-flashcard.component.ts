@@ -15,22 +15,21 @@ import {MatTextColumn} from '@angular/material/table';
 import {MatButton} from '@angular/material/button';
 
 @Component({
-  selector: 'app-add-flashcard',
-  standalone: true,
-  imports: [
-    FormsModule,
-    MatSelectModule,
-    ReactiveFormsModule,
-    EditorComponent,
-    MatInputModule,
-    MatTextColumn,
-    MatButton
-  ],
-  templateUrl: './add-flashcard.component.html',
-  styleUrl: './add-flashcard.component.scss',
-  providers: [
-    {provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js'}
-  ]
+    selector: 'app-add-flashcard',
+    imports: [
+        FormsModule,
+        MatSelectModule,
+        ReactiveFormsModule,
+        EditorComponent,
+        MatInputModule,
+        MatTextColumn,
+        MatButton
+    ],
+    templateUrl: './add-flashcard.component.html',
+    styleUrl: './add-flashcard.component.scss',
+    providers: [
+        { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }
+    ]
 })
 export class AddFlashcardComponent implements OnInit {
 
