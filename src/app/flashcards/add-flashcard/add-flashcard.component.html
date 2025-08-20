@@ -1,0 +1,36 @@
+<section >
+  <form [formGroup]="form">
+  <div class="row d-flex align-items-center">
+    <div class="col-6">
+      <h1 class="text-white">Dodaj kartę</h1>
+    </div>
+    <div class="offset-4 col-2 d-flex justify-content-end">
+      <button [disabled]="form.invalid" mat-button type="submit" (click)="sendForm()">Utwórz</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <mat-form-field>
+        <mat-label>Talia</mat-label>
+        <mat-select formControlName="deck">
+          @for (deck of decks; track deck) {
+            <mat-option [value]="deck.key">{{deck.value}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <span class="label">Przód</span>
+      <editor [init]="init" formControlName="front"></editor>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <span class="label">Tył</span>
+      <editor [init]="init" formControlName="back"></editor>
+    </div>
+  </div>
+  </form>
+</section>

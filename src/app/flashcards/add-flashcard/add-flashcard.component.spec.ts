@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FlashcardsListComponent } from './flashcards-list.component';
+import { AddFlashcardComponent } from './add-flashcard.component';
 
-describe('FlashcardsListComponent', () => {
-  let component: FlashcardsListComponent;
-  let fixture: ComponentFixture<FlashcardsListComponent>;
+describe('AddFlashcardComponent', () => {
+  let component: AddFlashcardComponent;
+  let fixture: ComponentFixture<AddFlashcardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FlashcardsListComponent]
+      imports: [AddFlashcardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FlashcardsListComponent);
+    fixture = TestBed.createComponent(AddFlashcardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
